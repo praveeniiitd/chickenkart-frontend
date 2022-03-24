@@ -1,7 +1,7 @@
 const config = require("../Utilities/config").config;
 const UserDAO = require('../DAO/userDAO');
 const MD5 = require('md5');
-const http = require('http');
+const https = require('https');
 
 
 /* API to register new user */
