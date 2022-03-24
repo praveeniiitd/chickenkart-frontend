@@ -1,1 +1,126 @@
-<h2>My name is <%= name %></h2>
+
+
+<!doctype html>
+<html>
+  <head>
+    <title>Accessories Store Website Template | WIX</title>
+    <h2>My name is <%= name %></h2>
+    
+    <!-- BEGIN SENTRY -->
+    <script id="sentry">
+  (function(c,u,v,n,p,e,z,A,w){function k(a){if(!x){x=!0;var l=u.getElementsByTagName(v)[0],d=u.createElement(v);d.src=A;d.crossorigin="anonymous";d.addEventListener("load",function(){try{c[n]=r;c[p]=t;var b=c[e],d=b.init;b.init=function(a){for(var b in a)Object.prototype.hasOwnProperty.call(a,b)&&(w[b]=a[b]);d(w)};B(a,b)}catch(g){console.error(g)}});l.parentNode.insertBefore(d,l)}}function B(a,l){try{for(var d=m.data,b=0;b<a.length;b++)if("function"===typeof a[b])a[b]();var e=!1,g=c.__SENTRY__;"undefined"!==
+  typeof g&&g.hub&&g.hub.getClient()&&(e=!0);g=!1;for(b=0;b<d.length;b++)if(d[b].f){g=!0;var f=d[b];!1===e&&"init"!==f.f&&l.init();e=!0;l[f.f].apply(l,f.a)}!1===e&&!1===g&&l.init();var h=c[n],k=c[p];for(b=0;b<d.length;b++)d[b].e&&h?h.apply(c,d[b].e):d[b].p&&k&&k.apply(c,[d[b].p])}catch(C){console.error(C)}}for(var f=!0,y=!1,q=0;q<document.scripts.length;q++)if(-1<document.scripts[q].src.indexOf(z)){f="no"!==document.scripts[q].getAttribute("data-lazy");break}var x=!1,h=[],m=function(a){(a.e||a.p||a.f&&
+  -1<a.f.indexOf("capture")||a.f&&-1<a.f.indexOf("showReportDialog"))&&f&&k(h);m.data.push(a)};m.data=[];c[e]=c[e]||{};c[e].onLoad=function(a){h.push(a);f&&!y||k(h)};c[e].forceLoad=function(){y=!0;f&&setTimeout(function(){k(h)})};"init addBreadcrumb captureMessage captureException captureEvent configureScope withScope showReportDialog".split(" ").forEach(function(a){c[e][a]=function(){m({f:a,a:arguments})}});var r=c[n];c[n]=function(a,e,d,b,f){m({e:[].slice.call(arguments)});r&&r.apply(c,arguments)};
+  var t=c[p];c[p]=function(a){m({p:a.reason});t&&t.apply(c,arguments)};f||setTimeout(function(){k(h)})})(window,document,"script","onerror","onunhandledrejection","Sentry","b4e7a2b423b54000ac2058644c76f718","https://static.parastorage.com/unpkg/@sentry/browser@5.27.4/build/bundle.min.js",{"dsn":"https://b4e7a2b423b54000ac2058644c76f718@sentry.wixpress.com/217"});
+  </script>
+
+    <script type="text/javascript">
+    window.Sentry.onLoad(() => {
+      window.Sentry.init({
+        "release": "1.1642.0",
+        "environment": "production",
+        "allowUrls": undefined,
+        "denyUrls": undefined
+});
+      window.Sentry.configureScope(function (scope) {
+        scope.setUser({
+          id: "320111891|544c696a-1842-4f67-bd8c-4a7eed9c5103",
+          clientId: "aa301d32-c59d-4d73-b55b-bdb64efeac08",
+        });
+        scope.setExtra("user.authenticated", true);
+        scope.setExtra("sessionId", "f42e77a4-347a-49f9-ab7f-82779100f9ac");
+      });
+    });
+    </script>
+    <!-- END SENTRY -->
+    <script type="text/javascript">
+        var initialTime = new Date().getTime();
+      (function () {
+        var appName = 'marketing-template-viewer';
+        window.appStartLoadTime = window.performance && window.performance.now();
+        window.fedops = window.fedops || {};
+        window.fedops.apps = window.fedops.apps || {};
+        window.fedops.apps[appName] = { startLoadTime: window.appStartLoadTime };
+        try { window.fedops.sessionId = window.localStorage.getItem('fedops.logger.sessionId'); } catch(e) {};
+        window.fedops.sessionId = window.fedops.sessionId || 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) { var r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8); return v.toString(16); });
+        (new Image()).src = '//frog.wix.com/fed?appName=' + appName + '&src=72&evid=14&session_id=' + window.fedops.sessionId;
+      })();
+    </script>
+    <script src="https://static.parastorage.com/polyfill/v3/polyfill.min.js?features=default,es6,es7,es2017,es2018,es2019,fetch&flags=gated&unknown=polyfill"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    <link type="image/x-icon" href="//www.wix.com/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="https://static.parastorage.com/services/third-party/fonts/Helvetica/fontFace.css">
+    <link rel="stylesheet" href="https://static.parastorage.com/unpkg/@wix/wix-fonts@1.12.0/madefor.min.css">
+    <link rel="stylesheet" href="https://static.parastorage.com/unpkg/@wix/wix-fonts@1.12.0/madeforDisplay.min.css">
+    <link rel="stylesheet" href="//static.parastorage.com/services/marketing-template-viewer/1.1642.0/app.min.css">
+
+    <meta name="description" content="This is tote-ally the best template for showcasing your latest, hottest designs. Upload photos of your tote bags, accessories, or any other item, write about yourself and your inspiration, and don&#39;t forget to add the necessary information in the FAQ section. Are you ready to turn into an online sensation? It&#39;s easy and fun!">
+    <meta name="author" content="Wixpress">
+    <meta http-equiv="content-language" content="en"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+    <meta property="og:title" content="Accessories Store Website Template | WIX"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.wix.com/website-template/view/html/2175"/>
+    <meta property="og:image" content="//static.wixstatic.com/media//templates/image/0affba6678e409af12b885e34c865be2135e1e113a09f9577b8c53eda41733c61638200293763.jpg"/>
+    <meta content="Wix" property="og:site_name">
+    <meta property="og:description" content="This is tote-ally the best template for showcasing your latest, hottest designs. Upload photos of your tote bags, accessories, or any other item, write about yourself and your inspiration, and don&#39;t forget to add the necessary information in the FAQ section. Are you ready to turn into an online sensation? It&#39;s easy and fun!"/>
+    <meta property="fb:admins" content="731184828"/>
+    <meta name="fb:app_id" content="236335823061286"/>
+    <meta name="google-site-verification" content="QXhlrY-V2PWOmnGUb8no0L-fKzG48uJ5ozW0ukU7Rpo"/>
+
+    <link rel="canonical" href="https://www.wix.com/website-template/view/html/2175"/>
+
+    <link rel="alternate" hreflang="fr" href="https://fr.wix.com/website-template/view/html/2175"/>
+    <link rel="alternate" hreflang="pt" href="https://pt.wix.com/website-template/view/html/2175"/>
+    <link rel="alternate" hreflang="cs" href="https://cs.wix.com/website-template/view/html/2175"/>
+    <link rel="alternate" hreflang="it" href="https://it.wix.com/website-template/view/html/2175"/>
+    <link rel="alternate" hreflang="nl" href="https://nl.wix.com/website-template/view/html/2175"/>
+    <link rel="alternate" hreflang="ko" href="https://ko.wix.com/website-template/view/html/2175"/>
+    <link rel="alternate" hreflang="de" href="https://de.wix.com/website-template/view/html/2175"/>
+    <link rel="alternate" hreflang="ru" href="https://ru.wix.com/website-template/view/html/2175"/>
+    <link rel="alternate" hreflang="sv" href="https://sv.wix.com/website-template/view/html/2175"/>
+    <link rel="alternate" hreflang="tr" href="https://tr.wix.com/website-template/view/html/2175"/>
+    <link rel="alternate" hreflang="da" href="https://da.wix.com/website-template/view/html/2175"/>
+    <link rel="alternate" hreflang="en" href="https://www.wix.com/website-template/view/html/2175"/>
+    <link rel="alternate" hreflang="es" href="https://es.wix.com/website-template/view/html/2175"/>
+    <link rel="alternate" hreflang="hi" href="https://hi.wix.com/website-template/view/html/2175"/>
+    <link rel="alternate" hreflang="ja" href="https://ja.wix.com/website-template/view/html/2175"/>
+    <link rel="alternate" hreflang="no" href="https://no.wix.com/website-template/view/html/2175"/>
+    <link rel="alternate" hreflang="pl" href="https://pl.wix.com/website-template/view/html/2175"/>
+    <link rel="alternate" hreflang="vi" href="https://vi.wix.com/website-template/view/html/2175"/>
+    <link rel="alternate" hreflang="uk" href="https://uk.wix.com/website-template/view/html/2175"/>
+    <link rel="alternate" hreflang="zh" href="https://zh.wix.com/website-template/view/html/2175"/>
+    <link rel="alternate" hreflang="th" href="https://th.wix.com/website-template/view/html/2175"/>
+    <link rel="alternate" hreflang="x-default" href="https://www.wix.com/website-template/view/html/2175" />
+
+  </head>
+  <body>
+    <script src="//static.parastorage.com/services/cookie-sync-service/1.282.0/embed-cidx.bundle.min.js"></script>
+    <script src="//static.parastorage.com/services/tag-manager-client/1.427.0/hostTags.bundle.min.js"></script>
+    <div id="root"><div data-hooks="app"><div data-hooks="tool-bar" class="r5pCB"><div class="fkTq0"><a data-hooks="logo" href="https://www.wix.com" class="B0RNK NpV02"><span class="mUJ65">wix.com</span></a><div class="fkTq0"><button data-hooks="desktop-view" class="BGSjv _1y6LM"><span class="yfxMt">show desktop view</span></button><hr class="UIYr0"/><button data-hooks="mobile-view" class="_41PDI "><span class="yfxMt">show mobile view</span></button></div></div><div class="fkTq0 undefined"><p data-hooks="tool-bar-title" class="DixmE">Click edit and create your own amazing website</p><a data-hooks="info-view" class="R9DsC " tabindex="0" role="dialog" href="#">Read More</a><a class="mfH9C" data-hooks="editor-link" href="https://manage.wix.com/edit-template/from-intro?originTemplateId=f9bf8eee-6569-46fa-b4e8-e6b8ca8990c1&amp;editorSessionId=42769F12-004C-4125-3DDC-BAC904366E71" target="_blank" tabindex="0">Edit this site</a></div></div><div data-hooks="template-demo" class="_7tRks"><div data-hooks="desktop-view" class="Nv5LU"><iframe data-hooks="desktop-iframe" src="https://www.wix.com/demone2/tote-bag-store" title="Accessories Store" width="100%" height="100%" class="GN17V"></iframe></div></div><div data-hooks="info-pop-up" class="sO70G"><div class="rKabk"><button data-hooks="card-close" class="+mRHt"><span class="fOOD9">close info popup</span></button><div class="hbnX-"><h1 data-hooks="card-title" class="+bcLj">Accessories Store - Website Template</h1><div class="SpKZ8"><h3 data-hooks="card-good-for-title" class="yppr7">Good For:</h3><p data-hooks="card-good-for" class="aPxEJ">Tote bag stores, accessories shops, and other designer retailers.</p></div><div class="SpKZ8"><h3 class="yppr7">Description:</h3><p data-hooks="card-description" class="aPxEJ">This is tote-ally the best template for showcasing your latest, hottest designs. Upload photos of your tote bags, accessories, or any other item, write about yourself and your inspiration, and don&#x27;t forget to add the necessary information in the FAQ section. Are you ready to turn into an online sensation? It&#x27;s easy and fun!</p></div></div><div class="x+HDB"><a data-hooks="card-editor-url" class="_72Zi0 DY-ee" target="_blank" href="https://manage.wix.com/edit-template/from-intro?originTemplateId=f9bf8eee-6569-46fa-b4e8-e6b8ca8990c1&amp;editorSessionId=42769F12-004C-4125-3DDC-BAC904366E71">Edit Now</a></div></div></div></div></div>
+    <script>
+      window.__BASEURL__ = "https:\u002F\u002Fwww.wix.com\u002Fwebsite-template\u002Fview\u002Fhtml\u002F";
+      window.__INITIAL_I18N__ = {"locale":"en","resources":{"errorPage.templatesLinkText":"Templates","template.viewer.page.title":"{{- title}} Website Template | WIX","template_button_label":"Edit Website","template_seeFeatures_label":"See All Features","template_expand_examples_text":"Great for","template_expand_header":"Template Features","template.viewer.title":"Click edit and create your own amazing website","template.viewer.edit.button":"Edit this site","template.viewer.read.more":"Read More","template.viewer.back":"Back","template.viewer.info.edit.button":"Edit Now","template.viewer.price":"Price:","template.viewer.info.title":"{{- title}} - Website Template","template.viewer.info.goodFor":"Good For:","template.viewer.info.description":"Description:","template.viewer.info.desktop.only.notice":"Edit this template by going to Wix.com from your desktop, where you can customise any of our beautiful templates.","template.viewer.see.all.templates":"See All Templates","template.viewer.seeAllExpressions":"See All Expressions","template.viewer.goToBiggerScreen":"Go to a bigger screen to edit.","template.viewer.getStarted":"Get Started","template.viewer.startNow":"Start Now","template.viewer.features":"Features","template.viewer.allFeatures":"All Features","template.viewer.expressions":"Expressions","template.viewer.tutorials":"Tutorials","template.viewer.updatesAndReleases":"Updates & Releases","template.viewer.comingSoon":"Coming soon","template.viewer.academy":"Academy","template.viewer.editTemplate":"Edit Template","a11y.desktop.button":"show desktop view","a11y.mobile.button":"show mobile view","a11y.close.popup.button":"close info popup","toolbar.tooltip.desktop":"1001px & up","toolbar.tooltip.tablet":"751 to 1000px","toolbar.tooltip.mobile":"320 to 750px","errorPage.4xx.title":"We couldn't find the template you're looking for","errorPage.5xx.title":"We couldn't load our template","errorPage.subTitle":"Error {{- code }}","errorPage.4xx.details":"Try searching for another template \u003Clink\u003Ehere\u003C\u002Flink\u003E.","errorPage.5xx.details":"A temporary technical issue on our end stopped us from loading this page. Please wait a few minutes and then try again.","errorPage.5xx.action":"Refresh"}};
+      window.__INITIAL_STATE__ = {"viewMode":"desktop","isInfoShown":false,"isEditButtonHidden":false,"template":{"title":"Accessories Store","description":"This is tote-ally the best template for showcasing your latest, hottest designs. Upload photos of your tote bags, accessories, or any other item, write about yourself and your inspiration, and don't forget to add the necessary information in the FAQ section. Are you ready to turn into an online sensation? It's easy and fun!","image":"\u002Ftemplates\u002Fimage\u002F0affba6678e409af12b885e34c865be2135e1e113a09f9577b8c53eda41733c61638200293763.jpg","id":"2175","lng":"en","price":"eCommerce","docUrl":"https:\u002F\u002Fwww.wix.com\u002Fdemone2\u002Ftote-bag-store","editorUrl":"https:\u002F\u002Fmanage.wix.com\u002Fedit-template\u002Ffrom-intro?originTemplateId=f9bf8eee-6569-46fa-b4e8-e6b8ca8990c1&editorSessionId=42769F12-004C-4125-3DDC-BAC904366E71","goodFor":"Tote bag stores, accessories shops, and other designer retailers.","siteId":"f079a559-b478-4643-a17b-13edb1ee067b","metaSiteId":"f9bf8eee-6569-46fa-b4e8-e6b8ca8990c1","editorSessionId":"42769F12-004C-4125-3DDC-BAC904366E71","isResponsive":false,"url":"https:\u002F\u002Fwww.wix.com\u002Fdemone2\u002Ftote-bag-store"},"config":{"locale":"en","dealerCmsTranslationsUrl":"\u002F\u002Fstatic.parastorage.com\u002Fservices\u002Fdealer-cms-translations\u002F1.5683.0\u002F","dealerLightboxUrl":"\u002F\u002Fstatic.parastorage.com\u002Fservices\u002Fdealer-lightbox\u002F2.0.218\u002F"}};
+      window.__BI__ = {"originUrl":"https:\u002F\u002Fwww.wix.com\u002Fwebsite\u002Ftemplates\u002Fhtml\u002Fonline-store","isAdi":"","galleryDocIndex":"","bookName":"","tpClick":"view_button","siteId":"f079a559-b478-4643-a17b-13edb1ee067b"};
+      window.__BI__.initialTime = initialTime;
+      window.__DEVICE__ = "desktop";
+      window.__CONSENT_POLICY__ = {"essential":true,"functional":true,"analytics":true,"advertising":true,"dataToThirdParty":true};
+      window.__ACTIVE_EXPERIMENTS__ = ["TemplateViewerPublicUrlError","NewIntroEnableAppSuggestions","TemplateViewerHydrationRender","TemplateViewerUseCustomErrorPages"];
+    </script>
+
+    <script src="//static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js" crossorigin></script>
+    <script src="//static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="//static.parastorage.com/services/cookie-consent-policy-client/1.573.0/app.bundle.min.js"></script>
+
+    
+      <script src="//static.parastorage.com/services/dealer-lightbox/2.0.218/dealer-lightbox.bundle.min.js"></script>
+    
+
+    <script src="//static.parastorage.com/services/marketing-template-viewer/1.1642.0/app.bundle.min.js"></script>
+  </body>
+</html>
