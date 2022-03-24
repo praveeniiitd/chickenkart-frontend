@@ -72,7 +72,7 @@ let login = async (req, res) => {
 };
 
 let health = async (req, res) => {
-  https.get('https://https://enigmatic-lowlands-81708.herokuapp.com/', (resp) => {
+  https.get('https://chickenkart-service.herokuapp.com/', (resp) => {
     let data = '';
 
     console.log("here");
