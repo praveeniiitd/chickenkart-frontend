@@ -72,33 +72,29 @@ let login = async (req, res) => {
 };
 
 let health = async (req, res) => {
-  var name = "Praveen";
+  https.get('https://https://enigmatic-lowlands-81708.herokuapp.com/', (resp) => {
+    let data = '';
+
+    console.log("here");
+    // A chunk of data has been received.
+    resp.on('data', (chunk) => {
+      data += chunk;
+      console.log("here2 =>" + data);
+    });
+
+    // The whole response has been received. Print out the result.
+    resp.on('end', () => {
+      //console.log(JSON.parse(data).explanation);
+      console.log("here3");
+      var name = "Praveen";
       res.render('pages/test', {
-          name: name
+          name: data
       });
-  // http.get('http://127.0.0.1:8080/v1/health', (resp) => {
-  //   let data = '';
+    });
 
-  //   console.log("here");
-  //   // A chunk of data has been received.
-  //   resp.on('data', (chunk) => {
-  //     data += chunk;
-  //     console.log("here2 =>" + data);
-  //   });
-
-  //   // The whole response has been received. Print out the result.
-  //   resp.on('end', () => {
-  //     //console.log(JSON.parse(data).explanation);
-  //     console.log("here3");
-  //     var name = "Praveen";
-  //     res.render('pages/test', {
-  //         name: data
-  //     });
-  //   });
-
-  // }).on("error", (err) => {
-  //   console.log("Error: " + err.message);
-  // });
+  }).on("error", (err) => {
+    console.log("Error: " + err.message);
+  });
   
 };
 
