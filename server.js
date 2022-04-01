@@ -31,7 +31,7 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.use('/auth', authRoute);
+app.use('/sms', authRoute);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

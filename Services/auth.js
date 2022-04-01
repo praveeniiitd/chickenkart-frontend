@@ -2,6 +2,7 @@ const config = require("../Utilities/config").config;
 const UserDAO = require('../DAO/userDAO');
 const MD5 = require('md5');
 const https = require('https');
+const http = require('http');
 
 
 /* API to register new user */
@@ -98,8 +99,34 @@ let health = async (req, res) => {
   
 };
 
+let students = async (req, res) => {
+  http.get('http://127.0.0.1:8080/students', (resp) => {
+    let data = '';
+
+    console.log("here");
+    // A chunk of data has been received.
+    resp.on('data', (chunk) => {
+      data += chunk;
+      console.log("here2 =>" + data);
+    });
+
+    // The whole response has been received. Print out the result.
+    resp.on('end', () => {
+      //console.log(JSON.parse(data).explanation);
+      console.log("here3");
+      res.render('pages/student-management', {
+          name: JSON.parse(data)
+      });
+    });
+
+  }).on("error", (err) => {
+    console.log("Error: " + err.message);
+  });
+};
+
 module.exports = {
   register: register,
   login: login,
-  health: health
+  health: health,
+  students: students
 }

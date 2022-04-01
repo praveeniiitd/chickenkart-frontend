@@ -7,6 +7,8 @@ router.post("/register", authService.register);
 
 router.get("/health", authService.health);
 
+router.get("/students", authService.students);
+
 
 /* User Login. */
 router.post("/login", authService.login);
